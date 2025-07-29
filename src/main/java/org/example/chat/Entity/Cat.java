@@ -1,12 +1,12 @@
-package Entity;
+package org.example.chat.Entity;
 
 public class Cat {
     private String name;
     private String breed;
-    private int favoriteMeal;
+    private String favoriteMeal;
     private String birthDate;
 
-    public Cat(String name, String breed, int favoriteMeal, String birthDate) {
+    public Cat(String name, String breed, String favoriteMeal, String birthDate) {
         this.name = name;
         this.breed = breed;
         this.favoriteMeal = favoriteMeal;
@@ -25,10 +25,10 @@ public class Cat {
     public void setBreed(String breed) {
         this.breed = breed;
     }
-    public int getFavoriteMeal() {
+    public String getFavoriteMeal() {
         return favoriteMeal;
     }
-    public void setFavoriteMeal(int favoriteMeal) {
+    public void setFavoriteMeal(String favoriteMeal) {
         this.favoriteMeal = favoriteMeal;
     }
     public String getBirthDate() {
