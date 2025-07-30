@@ -9,8 +9,11 @@
     <ul class="list-group" style="width: 25%">
         <c:forEach var="cat" items="${cats}">
             <li class="list-group-item">
-                <strong>${cat.name} ${cat.breed}</strong>
-                <p>Âge : ${cat.favoriteMeal}, Email : ${cat.birthDate}</p>
+                <strong>${cat.name}</strong>
+                <p>Breed : ${cat.breed} </p>
+                <p>Favorite Meal : ${cat.favoriteMeal}</p>
+                <p>Birthdate : ${cat.birthDate}</p>
+
             </li>
         </c:forEach>
     </ul>

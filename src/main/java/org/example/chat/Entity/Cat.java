@@ -1,12 +1,14 @@
 package org.example.chat.Entity;
 
+import java.time.LocalDate;
+
 public class Cat {
     private String name;
     private String breed;
     private String favoriteMeal;
-    private String birthDate;
+    private LocalDate birthDate;
 
-    public Cat(String name, String breed, String favoriteMeal, String birthDate) {
+    public Cat(String name, String breed, String favoriteMeal, LocalDate birthDate) {
         this.name = name;
         this.breed = breed;
         this.favoriteMeal = favoriteMeal;
@@ -31,7 +33,7 @@ public class Cat {
     public void setFavoriteMeal(String favoriteMeal) {
         this.favoriteMeal = favoriteMeal;
     }
-    public String getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 }

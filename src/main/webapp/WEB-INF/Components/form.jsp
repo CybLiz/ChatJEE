@@ -23,7 +23,7 @@
             </div>
             <div class="mb-3">
                 <label for="birthDate" class="form-label">Birth Date :</label>
-                <input type="date" class="form-control" id="birthDate"  name="birthDate">>
+                <input type="date" class="form-control" id="birthDate"  name="birthDate">
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
