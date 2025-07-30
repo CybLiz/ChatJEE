@@ -24,7 +24,7 @@ public class CatServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        req.setAttribute("cats", cats);
         req.getRequestDispatcher("/WEB-INF/Views/CatList.jsp").forward(req, resp);
     }
 
@@ -44,7 +44,6 @@ public class CatServlet extends HttpServlet {
 
         cats.add(new Cat(name, breed, favoriteMeal, birthDate));
         req.setAttribute("cats", cats);
-
-//        resp.sendRedirect(getServletContext().getContextPath());
+        resp.sendRedirect(req.getContextPath() + "/cats");
     }
 }

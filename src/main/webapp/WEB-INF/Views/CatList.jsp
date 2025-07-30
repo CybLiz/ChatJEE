@@ -1,6 +1,6 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<jsp:useBean id="cats" type="java.util.ArrayList<org.example.chat.Entity.Cat>" scope="request" />
+<%--<jsp:useBean id="cats" type="java.util.ArrayList<org.example.chat.Entity.Cat>" scope="request" />--%>
 
 
 <html>
